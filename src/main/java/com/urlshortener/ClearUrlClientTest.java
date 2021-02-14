@@ -25,6 +25,7 @@ public class ClearUrlClientTest {
 
     @Test
     public void test_clear_api() {
-        assertEquals(client.url("https%3A%2F%2Fgoogle.com%2F"), "sfdasdfa");
+        System.out.println("test yapma sayfası");
+        assertEquals(client.url("https%3A%2F%2Fgoogle.com%2F"), "https:\\/\\/cleanuri.com\\/pEqXje");
     }
 }

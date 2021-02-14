@@ -9,14 +9,15 @@ import io.micronaut.http.annotation.Post;
 import javax.inject.Inject;
 
 @Controller("/url")
-public class ControllerUrl {
+public class ControllerUrl  {
 
     @Inject
     private ClearUrlApi api;
 
-    @Get("/urlApi")
-    public String getClearUrl(String url) {
-        api.get_clear_url(url);
+    @Get("/url")
+    public String url(String url) {
+        System.out.println("controllerurl.java sayfasında url methodu");
+        url = api.get_clear_url(url);
         return url;
     }
 
